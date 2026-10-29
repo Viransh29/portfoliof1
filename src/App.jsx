@@ -105,7 +105,7 @@ function App() {
           {/* Footer */}
           <footer className="border-t border-white/6 py-8 text-center">
             <p className="text-xs uppercase tracking-[0.35em] text-white/25 font-medium">
-              Built with ❤️ &nbsp;·&nbsp; VIRANSH &nbsp;·&nbsp; 2026
+              Built by &nbsp;·&nbsp; VIRANSH &nbsp;·&nbsp; 2026
             </p>
           </footer>
         </div>
