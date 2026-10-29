@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Premium Obsidian Carbon Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#141722"/>
+      <stop offset="60%" stop-color="#080A0F"/>
+      <stop offset="100%" stop-color="#030406"/>
+    </linearGradient>
+
+    <!-- Scuderia Ferrari Championship Red (Liquid Gloss) -->
+    <linearGradient id="ferrariRed" x1="16" y1="13" x2="32" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF2E26"/>
+      <stop offset="40%" stop-color="#E10600"/>
+      <stop offset="100%" stop-color="#9C0000"/>
+    </linearGradient>
+
+    <!-- High-Reflectance Platinum White -->
+    <linearGradient id="platWhite" x1="45" y1="13" x2="33" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+
+    <!-- Titanium Outer Bezel -->
+    <linearGradient id="bezel" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E10600" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#E10600" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#262A36" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Subtle Red Ambient Glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#E10600" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Base Curved Chassis Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#bezel)" stroke-width="1.4"/>
+
+  <!-- ── SCULPTED F1 "V" MONOGRAM ── -->
+  <g transform="translate(32, 33) skewX(-14) translate(-32, -33)" filter="url(#softGlow)">
+    
+    <!-- LEFT AERO-WING: Scuderia Rosso Corsa -->
+    <path d="M11 20 L19 13.5 H27.5 L31.5 46.5 L31.5 52 L23.5 46.5 Z" fill="url(#ferrariRed)"/>
+    
+    <!-- Left Wing Lacquer Specular Reflection (Clean F1 Highlight) -->
+    <path d="M19.5 14.5 L30.5 45.5" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- RIGHT AERO-WING: Platinum White Airfoil -->
+    <path d="M36.5 13.5 H45 L53 20 L40.5 46.5 L32.5 52 L32.5 46.5 Z" fill="url(#platWhite)"/>
+
+    <!-- Right Wing Carbon Shadow Accent (Depth Layer) -->
+    <path d="M43 15.5 L50.5 20.5 L39.5 44" stroke="#080A0F" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Central High-Downforce Front Splitter (Nosecone Keel) -->
+    <polygon points="28.5,48.5 35.5,48.5 32,53.5" fill="#E10600"/>
+  </g>
+</svg>
